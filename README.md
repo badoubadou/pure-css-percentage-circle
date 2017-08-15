@@ -1,4 +1,4 @@
-# pure CSS circular bar view with animation
+# pure CSS circular bar with animation
 
 Description:
 
