@@ -2,7 +2,7 @@
 
 Description:
 
-A pure CSS circular bar view with animation, inspired by André Firchow. I translated to stylus, added some animation and used data attribute for the percentage.
+A pure CSS circular bar view with animation, based on André Firchow work. I translated to stylus, added some animation and used data attribute for the percentage.
 
 How to use it:
 	Load the cpbs.css in the document’s head section.
