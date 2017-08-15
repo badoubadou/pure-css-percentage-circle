@@ -1,3 +1,33 @@
 {
-
+  "name": "circular_percentage_bar_css",
+  "version": "1.0.0",
+  "description": "circular percentage bar css",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badoubadou/pure-css-percentage-circle.git"
+  },
+  "keywords": [
+    "circular",
+    "percentage",
+    "bar",
+    "css"
+  ],
+  "author": "romain malauzat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/badoubadou/pure-css-percentage-circle/issues"
+  },
+  "homepage": "https://github.com/badoubadou/pure-css-percentage-circle#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-util": "^3.0.8"
+  }
 }

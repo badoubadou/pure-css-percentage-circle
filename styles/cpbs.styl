@@ -1,0 +1,81 @@
+$CircleSize = 100px
+$duration = 1s
+$color = red
+*
+  box-sizing border-box
+.c100
+.slice
+.circle
+.warp_first_half
+	height $CircleSize
+	width $CircleSize
+.slice
+.c100
+	position relative
+
+.c100
+  display inline-block
+  
+.circle
+	border 5px solid $color
+	border-radius 50%
+	position absolute
+	top 0
+	left 0
+
+.warp_first_half
+	overflow hidden
+	left ($CircleSize / 2)
+	position absolute
+	transform rotate(180deg)
+	width ($CircleSize / 2)
+	
+.first_half
+	@extend .circle
+	clip rect(0px,($CircleSize / 2),$CircleSize,0px)
+		
+for i in (51..100)
+	@keyframes first_half{
+		from {
+			transform: rotate(-180deg)
+		}
+		to {
+			transform: rotate(0)
+		}
+	}
+	@keyframes second_half_{i}{
+		0% {
+			opacity 0
+			transform rotate(180deg)
+		}
+		1% {
+			opacity 1
+		}
+		100% {
+			opacity 1
+			transform rotate(360 / 100deg * i)
+		}
+	}
+	[data-p=\"{i}\"]
+		.first_half
+			animation ($duration / 2)  ease-in forwards first_half;
+		.second_half
+			@extend .circle
+			opacity 0
+			clip rect(0px,($CircleSize / 2),$CircleSize,0px)
+			animation ($duration/2) ease-out ($duration/2) forwards second_half_ + i;
+		
+for i in (1..50)
+	@keyframes  first_half_{i}{
+		from {
+			transform rotate(-180deg)
+		}
+		to {
+			transform rotate(-(180-(360 / 100deg * i)))
+		}
+	}
+	[data-p=\"{i}\"]
+		.first_half
+			animation $duration ease-in-out forwards first_half_ + i
+
+
