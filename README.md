@@ -8,6 +8,7 @@ How to use it:
 	Load the cpbs.css in the document’s head section.
 
 Had the html and set the data atribute "p" to your wanted percentage
+```html
 	<div class="c100" data-p="70">
 		<div class="slice">
 			<div class="second_half"></div>
@@ -16,6 +17,6 @@ Had the html and set the data atribute "p" to your wanted percentage
 			</div>
 		</div>
 	</div>
-
+```
 check it live here
 	https://codepen.io/romainmalauzat/pen/XaKjVM
