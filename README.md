@@ -1,8 +1,8 @@
-# Getting Started With Gulp
+# pure CSS circular bar view with animation
 
 Description:
 
-A pure CSS progress bar that shows progress bar with percentage in a circular bar view, inspired by André Firchow. I translated to stylus, added some animation and used data atribute for the percentage.
+A pure CSS circular bar view with animation, inspired by André Firchow. I translated to stylus, added some animation and used data atribute for the percentage.
 
 How to use it:
 	Load the cpbs.css in the document’s head section.
