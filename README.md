@@ -18,5 +18,15 @@ Add the html and set the data attribute "p" to your wanted percentage
 		</div>
 	</div>
 ```
+
+Overwrite size and color like so : 
+
+```css
+	.first_half,.second_half {
+	border-color:black;
+	border-width:20px;
+	}
+```
+
 check it live here
 	https://codepen.io/romainmalauzat/pen/XaKjVM

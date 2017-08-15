@@ -33,6 +33,9 @@ $color = red
 .first_half
 	@extend .circle
 	clip rect(0px,($CircleSize / 2),$CircleSize,0px)
+	
+.second_half
+	@extend .circle
 		
 for i in (51..100)
 	@keyframes first_half{
@@ -60,7 +63,6 @@ for i in (51..100)
 		.first_half
 			animation ($duration / 2)  ease-in forwards first_half;
 		.second_half
-			@extend .circle
 			opacity 0
 			clip rect(0px,($CircleSize / 2),$CircleSize,0px)
 			animation ($duration/2) ease-out ($duration/2) forwards second_half_ + i;
@@ -77,5 +79,8 @@ for i in (1..50)
 	[data-p=\"{i}\"]
 		.first_half
 			animation $duration ease-in-out forwards first_half_ + i
+		.second_half
+			opacity 0
+		
 
 
